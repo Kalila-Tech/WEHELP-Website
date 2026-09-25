@@ -21,9 +21,11 @@
     --radius: 18px;
 }
 
-*{ box-sizing: border-box; }
+/* Minimal CSS reset: consistent box model + base font size (1rem = 16px) */
 
-html{ scroll-behavior: smooth; }
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+
+html{ scroll-behavior: smooth; font-size: 100%; }
 
 body{
     margin: 0;
@@ -41,13 +43,13 @@ img{ max-width: 100%; display: block; }
 .container{
     max-width: var(--max);
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 2rem;
 }
 
 h1, h2, h3, h4{
     font-family: var(--display);
     color: var(--purple-deep);
-    margin: 0 0 16px;
+    margin: 0 0 1rem;
     font-weight: 600;
 }
 
@@ -59,7 +61,7 @@ h1, h2, h3, h4{
     top: auto;
     background: var(--purple-deep);
     color: var(--white);
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border-radius: 0 0 8px 0;
     z-index: 999;
 }
@@ -78,34 +80,34 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    padding: 18px 32px;
+    gap: 1.5rem;
+    padding: 1.125rem 2rem;
     background: rgba(250, 248, 252, 0.85);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--purple-line);
 }
 
 .logo{
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 600;
     font-style: italic;
     color: var(--purple-deep);
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     white-space: nowrap;
 }
 
 .logo a{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .hugging-emoji{
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.375rem;
     display: inline-block;
     animation: sway 3.5s ease-in-out infinite;
     transform-origin: 60% 80%;
@@ -119,7 +121,7 @@ header{
 .header-right{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .search-bar{
@@ -128,12 +130,12 @@ header{
 
 .search-bar input{
     width: 100%;
-    padding: 11px 18px;
+    padding: 0.6875rem 1.125rem;
     border-radius: 999px;
     border: 1px solid var(--purple-line);
     background: var(--white);
     font-family: var(--body);
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--ink);
     outline: none;
     transition: border-color .2s ease, box-shadow .2s ease;
@@ -154,7 +156,7 @@ header{
     border: 1px solid var(--purple-line);
     background: var(--white);
     color: var(--purple-deep);
-    font-size: 18px;
+    font-size: 1.125rem;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -174,20 +176,20 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
     margin: 0;
-    padding: 14px 32px;
+    padding: 0.875rem 2rem;
     flex-wrap: wrap;
 }
 
 nav a{
     position: relative;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: .03em;
     text-transform: uppercase;
     color: var(--ink-soft);
-    padding-bottom: 4px;
+    padding-bottom: 0.25rem;
     transition: color .2s ease;
 }
 
@@ -216,7 +218,7 @@ nav a.active::after{
 
 .home-section{
     position: relative;
-    padding: 96px 32px 110px;
+    padding: 6rem 2rem 6.875rem;
     background: radial-gradient(ellipse at 50% 0%, #EFE6FA 0%, var(--bg) 62%);
     overflow: hidden;
     text-align: center;
@@ -226,7 +228,7 @@ nav a.active::after{
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 0 auto 20px;
+    margin: 0 auto 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,23 +270,23 @@ nav a.active::after{
 }
 
 .home-section h2{
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 500;
     max-width: 640px;
-    margin: 0 auto 14px;
+    margin: 0 auto 0.875rem;
 }
 
 .home-section > p{
     max-width: 520px;
-    margin: 0 auto 12px;
+    margin: 0 auto 0.75rem;
     color: var(--ink-soft);
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 .breath-caption{
     display: block;
-    margin-top: 22px;
-    font-size: 12px;
+    margin-top: 1.375rem;
+    font-size: 0.75rem;
     letter-spacing: .12em;
     text-transform: uppercase;
     color: var(--purple);
@@ -295,10 +297,10 @@ nav a.active::after{
 
 .provide-list{
     max-width: 760px;
-    margin: 56px auto 0;
+    margin: 3.5rem auto 0;
     text-align: left;
     display: grid;
-    gap: 28px;
+    gap: 1.75rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -307,28 +309,28 @@ nav a.active::after{
     background: var(--white);
     border: 1px solid var(--purple-line);
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .provide-list li strong{
     display: block;
     color: var(--purple-deep);
     font-family: var(--display);
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
 }
 
 .provide-list li p{
     margin: 0;
     color: var(--ink-soft);
-    font-size: 14.5px;
+    font-size: 0.9062rem;
     max-width: none;
 }
 
 /* ===ABOUT=== */
 
 .about-section{
-    padding: 100px 32px;
+    padding: 6.25rem 2rem;
     background: var(--white);
 }
 
@@ -338,8 +340,8 @@ nav a.active::after{
 
 .about-section h2{
     text-align: center;
-    font-size: 34px;
-    margin-bottom: 42px;
+    font-size: 2.125rem;
+    margin-bottom: 2.625rem;
     position: relative;
 }
 
@@ -349,12 +351,12 @@ nav a.active::after{
     width: 56px;
     height: 3px;
     background: var(--coral);
-    margin: 16px auto 0;
+    margin: 1rem auto 0;
     border-radius: 2px;
 }
 
 .about-section p{
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: var(--ink-soft);
 }
 
@@ -367,45 +369,45 @@ nav a.active::after{
     font-family: var(--display);
     font-style: italic;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--purple-deep);
     background: var(--surface);
     border-radius: var(--radius);
-    padding: 36px 32px;
-    margin-top: 12px;
+    padding: 2.25rem 2rem;
+    margin-top: 0.75rem;
     border-left: 4px solid var(--coral);
 }
 
 /* === SERVICES SECTION=== */
 
 #services{
-    padding: 100px 32px;
+    padding: 6.25rem 2rem;
     background: var(--bg);
 }
 
 #services h2{
     text-align: center;
     color: var(--purple-deep);
-    font-size: 36px;
-    margin-bottom: 12px;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
 #services .eyebrow{
     text-align: center;
     color: var(--ink-soft);
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .card-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 28px;
+    gap: 1.75rem;
 }
 
 .card-grid > div{
     text-align: left;
-    padding: 36px 30px;
+    padding: 2.25rem 1.875rem;
     background: var(--white);
     border-radius: var(--radius);
     border: 1px solid var(--purple-line);
@@ -428,47 +430,65 @@ nav a.active::after{
     border-radius: 50%;
     background: var(--surface);
     color: var(--purple);
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
 }
 
 #services h3, #books h3{
-    font-size: 19px;
-    margin-bottom: 10px;
+    font-size: 1.1875rem;
+    margin-bottom: 0.625rem;
     color: var(--purple-deep);
 }
 
 #services p, #books p{
     color: var(--ink-soft);
-    font-size: 15px;
-    margin: 0 0 8px;
+    font-size: 0.9375rem;
+    margin: 0 0 0.5rem;
 }
 
 /* === Gallery === */
 
+#gallery{
+    padding: 6.25rem 2rem;
+    background: var(--bg);
+}
+
+#gallery h2{
+    text-align: center;
+    color: var(--purple-deep);
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#gallery .eyebrow{
+    text-align: center;
+    color: var(--ink-soft);
+    margin-bottom: 3rem;
+}
+
 .gallery-grid figure { margin: 0; }
 .gallery-grid img { width: 100%; height: auto; border-radius: 12px; display: block; }
-.gallery-grid figcaption { margin-top: 8px; font-size: 0.9rem; color: var(--text-muted, #555); }
+.gallery-grid figcaption { margin-top: 0.5rem; font-size: 0.9rem; color: var(--ink-soft); }
 
 
 /* === BOOKS SECTION === */
 
 #books{
-    padding: 100px 32px;
+    padding: 6.25rem 2rem;
     background: var(--white);
 }
 
 #books h2{
     text-align: center;
     color: var(--purple-deep);
-    font-size: 36px;
-    margin-bottom: 12px;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
 }
 
 #books .eyebrow{
     text-align: center;
     color: var(--ink-soft);
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .book-card{
@@ -483,18 +503,18 @@ nav a.active::after{
 }
 
 .book-meta{
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: var(--coral-deep);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .04em;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 /* === CONTACTS SECTION === */
 
 #contacts{
-    padding: 100px 32px;
+    padding: 6.25rem 2rem;
     background: var(--bg);
 }
 
@@ -504,20 +524,20 @@ nav a.active::after{
 
 #contacts h2{
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 12px;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
 }
 
 #contacts .eyebrow{
     text-align: center;
     color: var(--ink-soft);
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .contact-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 2.5rem;
     align-items: start;
 }
 
@@ -525,7 +545,7 @@ nav a.active::after{
     background: var(--white);
     border: 1px solid var(--purple-line);
     border-radius: var(--radius);
-    padding: 32px;
+    padding: 2rem;
 }
 
 .contact-info ul{
@@ -533,54 +553,54 @@ nav a.active::after{
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 18px;
+    gap: 1.125rem;
 }
 
 .contact-info li{
     display: flex;
-    gap: 14px;
+    gap: 0.875rem;
     align-items: flex-start;
-    font-size: 14.5px;
+    font-size: 0.9062rem;
     color: var(--ink-soft);
 }
 
 .contact-info i{
     color: var(--purple);
     width: 20px;
-    margin-top: 3px;
+    margin-top: 0.1875rem;
 }
 
 .contact-info strong{
     display: block;
     color: var(--purple-deep);
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 form.contact-form{
     display: grid;
-    gap: 16px;
+    gap: 1rem;
     background: var(--white);
     border: 1px solid var(--purple-line);
     border-radius: var(--radius);
-    padding: 32px;
+    padding: 2rem;
 }
 
 .contact-form label{
     display: block;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 600;
     color: var(--purple-deep);
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 .contact-form input,
 .contact-form textarea{
     width: 100%;
-    padding: 12px 14px;
+    padding: 0.75rem 0.875rem;
     border-radius: 10px;
     border: 1px solid var(--purple-line);
     font-family: var(--body);
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--ink);
     background: var(--bg);
     outline: none;
@@ -596,14 +616,14 @@ form.contact-form{
 
 .contact-form button{
     justify-self: start;
-    padding: 12px 28px;
+    padding: 0.75rem 1.75rem;
     border-radius: 999px;
     border: none;
     background: var(--coral-deep);
     color: var(--white);
     font-family: var(--body);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     cursor: pointer;
     transition: background .2s ease, transform .2s ease;
 }
@@ -613,8 +633,13 @@ form.contact-form{
     transform: translateY(-2px);
 }
 
+.contact-form button:active{
+    background: var(--purple-deep);
+    transform: translateY(0);
+}
+
 .form-note{
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin: 0;
     min-height: 18px;
     color: var(--purple);
@@ -624,7 +649,7 @@ form.contact-form{
 
 footer{
     background: var(--purple-deep);
-    padding: 44px 32px;
+    padding: 2.75rem 2rem;
 }
 
 footer .icons{
@@ -641,7 +666,7 @@ footer .icons a{
     height: 40px;
     border-radius: 50%;
     background: rgba(255,255,255,0.08);
-    margin: 0 8px;
+    margin: 0 0.5rem;
     color: var(--white);
     transition: background .2s ease, transform .2s ease;
 }
@@ -651,9 +676,13 @@ footer .icons a:hover{
     transform: translateY(-3px);
 }
 
+footer .icons a:active{
+    transform: translateY(-1px);
+}
+
 footer p{
-    margin-top: 24px;
-    font-size: 12px;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
     letter-spacing: .05em;
     color: rgba(255,255,255,0.55);
 }
@@ -670,7 +699,7 @@ footer p{
     border: none;
     background: var(--purple-deep);
     color: var(--white);
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(56,42,92,0.3);
     opacity: 0;
@@ -688,6 +717,10 @@ footer p{
 
 .back-to-top:hover{
     background: var(--coral-deep);
+}
+
+.back-to-top:active{
+    transform: translateY(1px) scale(0.96);
 }
 
 /* ===ACCESSIBILITY===*/
@@ -714,7 +747,7 @@ footer p{
 }
 
 @media (max-width: 720px){
-    header{ flex-wrap: wrap; padding: 16px 20px; }
+    header{ flex-wrap: wrap; padding: 1rem 1.25rem; }
     .search-bar{ order: 3; flex-basis: 100%; }
     .nav-toggle{ display: flex; }
 
@@ -723,18 +756,18 @@ footer p{
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
-        padding: 16px 20px 20px;
+        gap: 1rem;
+        padding: 1rem 1.25rem 1.25rem;
     }
     nav ul.open{ display: flex; }
 
-    .home-section{ padding: 64px 20px 80px; }
-    .home-section h2{ font-size: 30px; }
+    .home-section{ padding: 4rem 1.25rem 5rem; }
+    .home-section h2{ font-size: 1.875rem; }
     .breathing-wrap{ width: 220px; height: 220px; }
     .breath-ring.r4{ width: 220px; height: 220px; }
     .breath-ring.r3{ width: 170px; height: 170px; }
     .breath-ring.r2{ width: 120px; height: 120px; }
-    .about-section, #services, #books, #contacts{ padding: 64px 20px; }
-    .about-section h4{ font-size: 22px; padding: 26px 20px; }
+    .about-section, #services, #gallery, #books, #contacts{ padding: 4rem 1.25rem; }
+    .about-section h4{ font-size: 1.375rem; padding: 1.625rem 1.25rem; }
     .back-to-top{ right: 16px; bottom: 16px; }
 }
