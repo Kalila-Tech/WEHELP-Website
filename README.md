@@ -4,8 +4,8 @@ A multi-page website for **WE HELP**, a mental health support service offering
 24/7 text and hotline support, connections to professional therapy, and a
 judgment-free space for anyone facing a mental health struggle in South Africa.
 
-**Live site:** https://YOUR-USERNAME.github.io/WEHELP-Website/ &nbsp;·&nbsp;
-**Repository:** https://github.com/YOUR-USERNAME/WEHELP-Website
+**Live site:** https://wehelpdealwithmentalhealth.netlify.app &nbsp;·&nbsp;
+**Repository:** https://github.com/Kalila-Tech/WEHELP-Website.git
 
 **Current stage:** Part 3 — Enhancing Functionality and SEO (JavaScript, forms,
 search engine optimisation, security, deployment). Part 1 (HTML structure) and
