@@ -632,7 +632,7 @@ Format: **date**, then one bullet per change.
 
 ### Part 3 — new work
 
-**2026-11-02**
+**2026-11-03**
 
 *Pages and navigation*
 - Added `enquiry.html` (new) and `contact.html` (renamed from `contacts.html`, to match the file names in the brief). The menu on every page now has seven page links: Home, About, Services, Gallery, Books, Enquiry, Contact.
