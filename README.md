@@ -45,23 +45,6 @@ part of the site.
 | **Target audience** | People in South Africa facing mental health struggles, and friends or family looking for help on someone's behalf. Many visitors will be on a phone and may be upset, so the site must be fast, readable and simple. A second audience is potential volunteers and sponsors. |
 | **Goals** | 1. Put emergency and crisis numbers within one tap on every page and device. 2. Feel calm and safe, not clinical. 3. Be fully usable on phones, tablets and desktops. 4. Meet accessibility expectations (keyboard use, contrast, reduced motion). 5. Be found by people searching for mental health support in South Africa. 6. Let visitors enquire, volunteer, sponsor or get in touch without friction. |
 
-## How to view the site
-
-Open `index.html` in a browser, or serve the folder with a local server:
-
-```
-python3 -m http.server 8000
-# then browse to http://localhost:8000/
-```
-
-The site needs **no internet connection** except for the map tiles on the
-Contact page (they come from OpenStreetMap). Fonts, icons, jQuery and Leaflet
-are all stored in the project.
-
-Opened straight from disk (`file://`), browsers block `fetch()`. The site is
-built to cope: the Books page keeps the books already written in its HTML, and
-the enquiry form and search fall back to simpler wording. For the full
-experience use a local server or the deployed site.
 
 ## File structure
 
