@@ -1,7 +1,0 @@
-# WE HELP — robots.txt
-# All search engines may crawl the whole site except the screenshot evidence folder.
-User-agent: *
-Allow: /
-Disallow: /screenshots/
-
-Sitemap: https://YOUR-USERNAME.github.io/WEHELP-Website/sitemap.xml
