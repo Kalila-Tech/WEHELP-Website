@@ -1,0 +1,54 @@
+/*!
+ * Font Awesome Free 7.3.1 (subset) by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Only the 26 icons used by WE HELP are included, to keep the page light.
+ */
+@font-face{ font-family: "Font Awesome 7 Free"; font-style: normal; font-weight: 900; font-display: swap; src: url("webfonts/fa-solid-subset.woff2") format("woff2"); }
+@font-face{ font-family: "Font Awesome 7 Brands"; font-style: normal; font-weight: 400; font-display: swap; src: url("webfonts/fa-brands-subset.woff2") format("woff2"); }
+
+.fa-solid,
+.fa-brands,
+.fab{
+  display: inline-block;
+  width: 1.25em;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-align: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-solid{ font-family: "Font Awesome 7 Free"; font-weight: 900; }
+.fa-brands,
+.fab{ font-family: "Font Awesome 7 Brands"; font-weight: 400; }
+
+:is(.fa-solid, .fa-brands, .fab)::before{ content: var(--fa)/""; }
+@supports not (content: ""/""){ :is(.fa-solid, .fa-brands, .fab)::before{ content: var(--fa); } }
+
+.fa-bars{ --fa: "\f0c9"; }
+.fa-xmark{ --fa: "\f00d"; }
+.fa-comment-dots{ --fa: "\f4ad"; }
+.fa-headset{ --fa: "\f590"; }
+.fa-shield-heart{ --fa: "\e574"; }
+.fa-book-open{ --fa: "\f518"; }
+.fa-phone{ --fa: "\f095"; }
+.fa-comment-sms{ --fa: "\f7cd"; }
+.fa-envelope{ --fa: "\f0e0"; }
+.fa-heart-pulse{ --fa: "\f21e"; }
+.fa-hand-holding-heart{ --fa: "\f4be"; }
+.fa-triangle-exclamation{ --fa: "\f071"; }
+.fa-arrow-up{ --fa: "\f062"; }
+.fa-location-dot{ --fa: "\f3c5"; }
+.fa-chevron-down{ --fa: "\f078"; }
+.fa-chevron-left{ --fa: "\f053"; }
+.fa-chevron-right{ --fa: "\f054"; }
+.fa-share-nodes{ --fa: "\f1e0"; }
+.fa-circle-check{ --fa: "\f058"; }
+.fa-circle-exclamation{ --fa: "\f06a"; }
+.fa-magnifying-glass{ --fa: "\f002"; }
+.fa-facebook-f{ --fa: "\f39e"; }
+.fa-instagram{ --fa: "\f16d"; }
+.fa-twitter{ --fa: "\f099"; }
+.fa-whatsapp{ --fa: "\f232"; }
+.fa-linkedin-in{ --fa: "\f0e1"; }

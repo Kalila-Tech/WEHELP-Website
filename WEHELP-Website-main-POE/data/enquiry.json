@@ -1,0 +1,47 @@
+{
+  "_note": "Sample terms for the assignment. Replace these figures and policies with the organisation's real ones before launch.",
+  "volunteer": {
+    "title": "Volunteering with WE HELP",
+    "cost": "There is no cost to volunteer.",
+    "availability": "Information sessions run on a rolling basis. Your nearest session is on {{nextSession}}.",
+    "shiftHours": 4,
+    "steps": [
+      "A volunteer coordinator will contact you on your preferred date to talk through the role.",
+      "You will be invited to an information session and asked to complete an application.",
+      "Successful applicants complete training before taking any calls or texts."
+    ]
+  },
+  "sponsor": {
+    "title": "Sponsoring WE HELP",
+    "cost": "Your pledge of R{{amount}} a month is R{{yearly}} over a year.",
+    "availability": "Pledges can start on any date. We will confirm your pledge in writing.",
+    "tiers": [
+      { "min": 50,   "name": "Friend",    "text": "Helps keep the text line and hotline running." },
+      { "min": 500,  "name": "Supporter", "text": "Helps fund training for new volunteers." },
+      { "min": 2000, "name": "Partner",   "text": "Helps connect more people to professional therapy." }
+    ],
+    "steps": [
+      "Our partnerships team will contact you on your preferred date.",
+      "We will send you a pledge form to confirm the amount and start date."
+    ]
+  },
+  "therapy": {
+    "title": "Therapy referral",
+    "cost": "WE HELP does not charge to connect you with a therapist. Therapists set their own fees, so please ask about options such as medical aid cover or reduced-fee sessions.",
+    "availability": "Our text line and hotline are available 24 hours a day, 7 days a week while we match you with a therapist.",
+    "steps": [
+      "A member of our team will contact you on your preferred date to understand what you need.",
+      "We will share a short list of professionals who may be a good fit.",
+      "You choose who to contact. There is no pressure and no obligation."
+    ]
+  },
+  "info": {
+    "title": "About our text line and hotline",
+    "cost": "Contacting WE HELP does not require a diagnosis, and no problem is too small.",
+    "availability": "Both the text line and the hotline are available 24 hours a day, 7 days a week.",
+    "steps": [
+      "Call 072 055 37 17, or text \"HELP\" to the same number, at any time.",
+      "If you are in immediate danger, call 112, Police 10111 or Ambulance 10177 first."
+    ]
+  }
+}
